@@ -1,38 +1,127 @@
-.App {
+.maimbody {
+  /* background-color: aquamarine; */
+  height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.maimSection {
+  width: 425px;
+}
+
+.roweOne {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  font-size: 125px;
+  justify-content: flex-start;
+  text-align: center;
+  margin: auto auto;
+}
+
+.singelSguer {
+  width: 120px;
+  height: 120px;
+  /* border: 3px solid rgb(90, 86, 86); */
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(243, 154, 127);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.PlayersPerson {
+  width: 425px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 30px;
+  padding-right: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.boxPlayersName {
+  border: 2px solid rgb(243, 140, 140);
+  padding: 5px 10px;
+  
+  /* background-color: rgb(192, 231, 118); */
+}
+
+.modalBox {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(222, 240, 140);
+  border-radius: 15px;
+  font-size: 39px;
+  font-weight: bold;
+  color: rgb(95, 92, 92);
+  /* position: relative;
+  top: 35%;
+  left: 38%; */
+  padding-top: 70px;
+  margin: 0 30px 0 0;
+}
+
+.baseModal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* padding-top: 100px; */
+  /* Location of the box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.timerTTags {
+  width: 425px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 30px;
+  padding-right: 30px;
+  flex-direction: column;
+}
+
+.chengeThem {
+  border: 3px solid rgb(243, 140, 140);
+  padding: 5px 10px;
+  /* background-color: rgb(192, 231, 118); */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.light {
+  background-color: rgb(143, 241, 245);
+  color: rgb(36, 33, 33);
+  
+}
+
+.dark {
+  background-color: rgb(83, 81, 77);
+  color: aqua;
+}
+
+.dark .singelSguer{
+  border-color: rgb(238, 247, 121);
+}
+
+.light .singelSguer{
+  border-color: rgb(30, 68, 238);
 }
